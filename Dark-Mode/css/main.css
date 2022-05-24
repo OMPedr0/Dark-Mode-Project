@@ -1,0 +1,175 @@
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #fff;
+        }
+        
+        @media (max-width: 330px) {
+            .mt-xs-4 {
+                margin-top: 1.5rem;
+            }
+        }
+        
+        .btn_block>.btn {
+            margin-right: 15px;
+        }
+        
+        .btn_block>.btn:last-child {
+            margin-right: 15px;
+        }
+        
+        .btn {
+            border-radius: 30px;
+            padding: 8px 25px;
+            font-family: 'Gotham Pro Regular';
+        }
+        
+        .btn_slim {
+            padding: 4px 15px;
+        }
+        
+        .btn_fat {
+            padding: 16px 35px;
+        }
+        
+        .btn_orange {
+            color: #fff;
+            background: linear-gradient(to left, #58e75f 0%, #58e75f 100%);
+        }
+        
+        .btn_orange:hover,
+        .btn_orange:active {
+            color: #fff;
+            background: linear-gradient(to left, #08830e 30%, #08830e 100%);
+        }
+        
+        header {
+            padding-top: 20px;
+        }
+        
+        .header-link {
+            color: #323232;
+            font-family: 'Gotham Pro Medium';
+            position: relative;
+        }
+        
+        .header-link:hover,
+        .header-link:active,
+        .header-link:focus {
+            color: #58e75f;
+            text-decoration: none;
+        }
+        
+        @media (min-width: 992px) {
+            .header-item {
+                padding-left: 20px;
+            }
+            .header-item.active>.header-link:after,
+            .header-link:hover.header-link:after,
+            .header-link:active.header-link:after,
+            .header-link:focus.header-link:after {
+                content: '';
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background-color: #58e75f;
+                position: absolute;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                bottom: -12px;
+            }
+        }
+        
+        @media (min-width: 576px) {
+            .index__hsp__title__text {
+                font-size: 30px;
+            }
+            .index__hsp__ico {
+                font-size: 40px;
+            }
+            .index__hsp__desc {
+                font-size: 16px;
+            }
+        }
+        
+        .index__hsp__container {
+            position: relative;
+            padding-top: 120px;
+        }
+        
+        .index__hsp__block__container {
+            display: flex;
+        }
+        
+        .index__hsp__block__number {
+            display: none;
+            align-items: center;
+            justify-content: center;
+            align-self: flex-start;
+            border-radius: 38px;
+            background: linear-gradient(to left top, #58e75f, #58e75f 80%);
+        }
+        
+        .index__hsp__block__number>span {
+            padding: 15px 35px;
+            font-size: 36px;
+            font-family: "Gotham Pro Bold";
+            color: rgb(255, 255, 255);
+            text-transform: uppercase;
+        }
+        
+        .index__hsp__block__line {
+            display: none;
+            height: 5px;
+            flex: 0 0 25px;
+            flex-grow: 0;
+            margin: 10px 10px 0px 10px;
+            background: #58e75f;
+            border-radius: 10px;
+        }
+        
+        @media (min-width: 576px) {
+            .index__hsp__block__number {
+                display: flex;
+            }
+            .index__hsp__block__line {
+                display: inline;
+            }
+        }
+        
+        .index__hsp__block__desc__container {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .index__hsp__block__desc__title {
+            font-size: 18px;
+            font-family: "Gotham Pro Bold";
+            color: rgb(45, 45, 45);
+            text-transform: uppercase;
+        }
+        
+        .index__hsp__block__desc__text {
+            font-size: 14px;
+            font-family: "Gotham Pro Light";
+            color: rgb(45, 45, 45);
+            margin-top: 5px;
+        }
+        
+        .dark-mode {
+            filter: invert(1) hue-rotate(180deg);
+        }
+        
+        .invert {
+            filter: invert(1) hue-rotate(180deg);
+        }
+        
+        @media (min-width: 576px) {
+            .index__hsp__block__desc__text {
+                width: 45%;
+            }
+        }
